@@ -1,0 +1,26 @@
+<!-- <p>Your Appointments</p> -->
+
+<div class="container" *ngIf="size; else noappointments">
+    <!-- <p>departmentdoctors works!</p> -->
+    <!-- <h1>The doctors in the {{doctors.splName}} Department</h1> -->
+    <table class="table table-striped">
+
+        <tr>
+            <td>User Name</td>
+            <td>Doctor Name</td>
+            <td>Doctor Specialization</td>
+            <td>Appointment Date</td>
+            <td>Appointment Time</td>
+        </tr>
+        <tr *ngFor="let appointment of app">
+            <td>{{appointment.userName}}</td>
+            <td>{{appointment.doctorName}}</td>
+            <td>{{appointment.department}}</td>
+            <td>{{appointment.appointmentDate}}</td>
+            <td>{{appointment.appointmentTime}}</td>
+        </tr>
+    </table>
+</div>
+<div class="container">
+    <ng-template #noappointments>There are no appointments</ng-template>
+</div>

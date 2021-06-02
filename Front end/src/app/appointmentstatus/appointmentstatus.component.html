@@ -1,0 +1,9 @@
+<!-- <p>appointmentstatus works!</p> -->
+
+<h5 *ngIf="isBooked; else notBooked ">Appointment is Booked</h5>
+<h5>
+    <ng-template #notBooked> Appointment is not booked due to not having slot / you have booked in Advance or delay</ng-template>
+</h5>
+<div>
+    <a class="btn btn-primary" routerLink="/bookedappointments" role="button">Show Appointments</a>
+</div>

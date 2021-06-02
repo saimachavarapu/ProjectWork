@@ -1,0 +1,15 @@
+<!-- <p>doctorview works!</p> -->
+
+<h1>Doctor details</h1>
+<pre>
+    Doctor Id                 : {{doctorData.doctorId}}
+    Doctor Name               : {{doctorData.doctorName}}
+    Doctor Specialization     : {{doctorData.splName}}
+    Doctor Experience         : {{doctorData.experience}}
+    Doctor OPerations Taken   : {{doctorData.noOfOperationsTaken}}
+    Operations Success        : {{doctorData.operationsSuccess}}
+    Success Ratio             : {{doctorData.successRatio}} 
+    
+    <a class="btn btn-primary" (click)="bookAppointment(doctorData)" role="button">Book Appointment</a>
+    
+</pre>
